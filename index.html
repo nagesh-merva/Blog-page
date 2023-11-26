@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('.content-links a');
+
+            let currentIndex = 0;
+
+            function showNextLink() {
+                links[currentIndex].classList.add('hidden');
+                currentIndex = (currentIndex + 1) % links.length;
+                links[currentIndex].classList.remove('hidden');
+            }
+
+            setInterval(showNextLink, 3000); // Adjust the interval as needed (3000 milliseconds = 3 seconds)
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATIONS BLOG</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="resources.html">RESOURCES</a></li>
+                <li><a href="about.html">ABOUT US </a></li>
+                <li class="chapters">
+                    <input type="checkbox" id="categoriesToggle" class="dropdown-toggle">
+                    <label for="categoriesToggle"><strong>CHAPTERS</strong></label>
+                    <ul class="dropdown-content">
+                        <li class="dropdown">
+                            <input type="checkbox" id="categoriesToggle" class="dropdown-toggle">
+                            <label for="categoriesToggle"><strong>CHAPTER - 1</strong></label>
+                            <ul class="dropdown-content">
+                                <li><a href="blog1.html">Blogs - 1</a></li>
+                                <li><a href="#">Blog - 2</a></li>
+                                <li><a href="#">Blog - 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <input type="checkbox" id="categoriesToggle" class="dropdown-toggle">
+                            <label for="categoriesToggle"><strong>CHAPTER - 2</strong></label>
+                            <ul class="dropdown-content">
+                                <li><a href="blog1.html">Blogs - 1</a></li>
+                                <li><a href="#">Blog - 2</a></li>
+                                <li><a href="#">Blog - 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <input type="checkbox" id="categoriesToggle" class="dropdown-toggle">
+                            <label for="categoriesToggle"><strong>CHAPTER - 3</strong></label>
+                            <ul class="dropdown-content">
+                                <li><a href="blog1.html">Blogs - 1</a></li>
+                                <li><a href="#">Blog - 2</a></li>
+                                <li><a href="#">Blog - 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <div class="top-bar">
+        <img src="./images/logo1.jpeg" alt="CREATIONS LOGO">
+    </div>
+    <div class="content-links">
+        <h3>
+            <a href="blog1.html"><h3>FUTURE TECH </h3></a>
+            <a href="blog2.html"><h3>DRAWING THE MONALISA</h3></a>
+            <a href="blog3.html"><h3>HOME AND BALCONY GARDEN</h3></a>
+        </h3>
+    </div>
+    <div class="pic-galary">
+        <a href="blog1.html"><img src="./images/galary1.jpeg" alt="picture"></a>
+        <a href="blog2.html"><img src="./images/galary2.jpeg" alt="picture"></a>
+        <a href="blog3.html"><img src="./images/galary3.jpeg" alt="picture"></a>
+        <a href="about.html"><img src="./images/galary4.jpeg" alt="picture"></a>
+        <a href="about.html"><img src="./images/galary5.jpeg" alt="picture"></a>
+    </div>
+    <div class="main">
+        <br><br><br><br>
+        <h1><strong>learn about NEW Technology</strong></h1>
+        <div class="part1">
+            <img src="./images/main1.jpeg" alt="future technologies">
+            <h3>If you are curious about the future technology that will shape our world, you should check out our blog page. We have
+            articles, images, and videos that explore the latest innovations and advancements in various fields, such as
+            nanotechnology, artificial intelligence, biotechnology, and quantum computing. Learn about the future technology that
+            will change your life!</h3>
+        </div>
+        <h1><strong>Draw your thoughts </strong></h1>
+        <div class="part1">
+            <h3>If you are passionate about painting and artists, you should visit our blog page. We have articles, images, and videos
+            that showcase the amazing works and stories of various painters and artists from different eras, styles, and
+            backgrounds. Learn about the painting and artists that will inspire you!</h3>
+            <img src="./images/main2.jpeg" alt="arts">
+        </div>
+        <h1><strong>BRING nature at your HOME</strong></h1>
+        <div class="part1">
+            <img src="./images/main3.jpeg" alt="garden">
+            <h3>If you are interested in gardening and plants at home, you should check out our blog page. We have articles, images, and
+            videos that teach you how to grow and care for various plants and flowers in your indoor and outdoor spaces. Learn about
+            the gardening and plants at home that will beautify your environment and improve your well-being!</h3>
+        </div>
+        <div class="part2">
+            <h2>AND MANY MORE !!!</h2>
+            <h3>Our blog page is not only a source of information, but also a platform for curiosity, creativity, and knowledge. We have
+            content that covers various topics related to upcoming technologies, such as virtual reality, blockchain, robotics, and
+            more. You can learn about the latest trends, innovations, and challenges in these fields, as well as how they will
+            affect our society and lives. You can also explore your own ideas and imagination by creating your own content using our
+            AI tools. Join us in discovering the future technology that will amaze you!</h3>
+        </div>
+    </div>
+    <div class="abouts">
+        <span class="copyright">&copy 2023 , CREATIONS</span>
+    </div>
+
+</body>
+</html>
